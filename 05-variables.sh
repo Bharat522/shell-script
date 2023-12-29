@@ -1,6 +1,6 @@
 #!/bin/bash
 
-username=$1 # this means small letter username is variables and $USERNAME is value what we pass at the time of output
+username=$1 # this means small letter username is variables and $1 is value what we pass at the time of output
 password=$2
 
 echo "Please enter your username:"  # what ever we write in echo it will be printed in o/p screen
