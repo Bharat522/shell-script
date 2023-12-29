@@ -15,5 +15,4 @@ read -s PASSWORD
 
 echo "Password: $PASSWORD"
 
-#just changed the commit message
 
