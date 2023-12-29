@@ -1,5 +1,5 @@
 #!/bin/bash
 
-DATE=$(date)
+DATE=$date
 
-echo "script executed date & time: {$DATE}"
+echo "script executed date & time: {$DATE}" # 
