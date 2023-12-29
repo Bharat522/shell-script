@@ -1,5 +1,8 @@
 #!/bin/bash
 
+username=$1
+password=$2
+
 echo "Please enter your username:"  # what ever we write in echo it will be printed in o/p screen
 
 read -s USERNAME # read command is used to just read the value entered for USERNAME and (-s) is used to hide the value entered in o/p screen
