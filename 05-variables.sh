@@ -6,8 +6,12 @@ read -s USERNAME # read command is used to just read the value entered for USERN
 
 username=$USERNAME # this means small letter username is variables and $USERNAME is value what we pass at the time of output
 
+echo "Username: $USERNAME"
+
 echo "Please enter your password:"
 
 read -s PASSWORD
 
 password=$PASSWORD
+
+echo "Password: $PASSWORD"
