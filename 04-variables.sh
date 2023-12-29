@@ -9,4 +9,7 @@ echo "$PERSON1: How are you $2?"
 echo "$PERSON2: I am good $1, How are you"
 
 # at the time of o/p we need to pass the values
-# without passing values this script has no meaningfull
+# without passing values at runtime,this script has no meaning
+
+
+# in this script we have passed the values at runtime
