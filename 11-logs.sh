@@ -1,10 +1,7 @@
 #!/bin/bash
 
-DATE=$(date)
-
-echo "script executed date & time: $DATE"
-
 ID=$(id -u)
+TIMESTAMP=$(date +%F-%H-%M-%S)
 
 echo "script name: $0"  # Symbol '$0' denotes the script name.
 
