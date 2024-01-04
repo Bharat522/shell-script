@@ -2,11 +2,12 @@
 
 ID=$(id -u)
 TIMESTAMP=$(date +%F-%H-%M-%S) # %F: year-month-date, %H: hour, %M: minute, %S: second 
-R="\e[31m"
-G="\e[32m"
-N="\e[0m"
+R="\e[31m"  # red colour
+G="\e[32m"  # green colour   
+Y="\e[33m"  # yellow colour
+N="\e[0m"   # normal colour
 
-LOGFILE="/tmp/$0-$TIMESTAMP.log"
+LOGFILE="/tmp/$0-$TIMESTAMP.log" # tmp folder,$0-script name.
 
 echo "Script started executing at $TIMESTAMP" &>> $LOGFILE
 
@@ -28,7 +29,7 @@ else
     echo -e  " You are $G root $N user"
 fi 
 
-yum install mysql -y &>> $LOGFILE
+yum install mysql -y &>> $LOGFILE # here by using &>> $LOGFILE we are keeping the log/record of this command executed
 
 VALIDATE $? "Installing Mysql"
 
