@@ -11,4 +11,3 @@ then
 else
    echo "Given number $NUMBER is less than 100"
 fi
-
