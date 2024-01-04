@@ -1,5 +1,9 @@
 #!/bin/bash
 
+DATE=$(date)
+
+echo "script executed date & time: $DATE"
+
 ID=$(id -u)
 
 VALIDATE(){
@@ -22,8 +26,8 @@ fi # fi means reverse of if, indicating condition end
 
 yum install mysql -y
 
-VALIDATE 
+VALIDATE $? "Installing Mysql"
 
-yum install git1 -y
+yum install git -y
 
-VALIDATE 
+VALIDATE $? "Installing GIT"
