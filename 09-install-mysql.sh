@@ -30,5 +30,5 @@ then
     echo "ERROR:: INstalling GIT is Failed"
     exit 1
 else
-    exho "Installing GIT is SUCCESS"
+    echo "Installing GIT is SUCCESS"
 fi
