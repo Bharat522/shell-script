@@ -5,7 +5,7 @@ ID=$(id -u)
 if [ $ID -ne 0 ]
 then
     echo "ERROR:: please run this script with root user access"
-    exit 1 # this is exit status if you dont run thhis script as root user script will stop here at this point as id will not be 0
+    #exit 1 # this is exit status if you dont run thhis script as root user script will stop here at this point as id will not be 0
     # exit status value must be otherthan zero as the ID for ROOT user is 0
 else
     echo "you are root user"
