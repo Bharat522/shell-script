@@ -16,7 +16,7 @@ VALIDATE(){
         echo -e "ERROR:: $2  $R Failed $N"       # echo is for printing purpose and for help command:   "man echo"
         exit 1
     else
-        echo -e "$2  $G SUCCESS $N" 
+        echo -e "$2  $G SUCCESS " 
     fi
 }
 
