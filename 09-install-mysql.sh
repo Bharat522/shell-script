@@ -13,7 +13,7 @@ fi
     # else is not required in this statement as we are checking the user is root or not
     # if user is root we will proceed and run the next step 
     # if not root user then error msg will get displayed
-yum install mysqll -y
+yum install mysql -y
 
 if [ $? -ne 0 ]
 then
