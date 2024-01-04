@@ -8,12 +8,12 @@ ID=$(id -u)
 
 VALIDATE(){
     if [ $1 -ne 0 ]
-then 
-    echo "ERROR:: $2 Failed"
-    exit 1
-else
-    echo "$2 SUCCESS"
-fi
+    then 
+        echo "ERROR:: $2 Failed"
+        exit 1
+    else
+        echo "$2 SUCCESS"
+    fi
 }
 
 if [ $ID -ne 0 ]
