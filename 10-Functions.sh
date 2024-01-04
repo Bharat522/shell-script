@@ -7,12 +7,12 @@ echo "script executed date & time: $DATE"
 ID=$(id -u)
 
 VALIDATE(){
-    if [ $? -ne 0 ]
+    if [ $1 -ne 0 ]
 then 
-    echo "ERROR:: INstalling Failed"
+    echo "ERROR:: $2 Failed"
     exit 1
 else
-    echo "Installing SUCCESS"
+    echo "$2 SUCCESS"
 fi
 }
 
