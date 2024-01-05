@@ -17,13 +17,13 @@ VALIDATE(){
         echo -e "ERROR:: $2  $R Failed $N"       # echo is for printing purpose and for help command:   "man echo"
         exit 1
     else
-        echo -e "$2  $G SUCCESS $N" 
+        echo -e "$2  $G SUCCESS $N"   # $G means we are using green colour for SUCCESS word and then we end the green colour by using $N which is normal colour
     fi
 }
 
 if [ $ID -ne 0 ] 
 then
-    echo -e " $R ERROR:: Please run this script with root access $N"
+    echo -e " $R ERROR:: Please run this script with root access $N" 
     exit 1 
 else
     echo -e  " You are $G root $N user"
