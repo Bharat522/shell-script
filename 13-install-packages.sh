@@ -14,4 +14,7 @@ else
     echo -e  " You are $G root $N user"
 fi 
 
-echo "All args Passed:: $@"
+echo "All args Passed:: $@"  # $@ it will show all the args passed 
+
+echo "Total no:of Args Passed:: $#"  # $# will show how many args passed
+
