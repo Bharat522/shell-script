@@ -11,7 +11,6 @@ LOGFILE="/tmp/$0-$TIMESTAMP.log"
 
 echo "script stareted executing at $TIMESTAMP" &>> $LOGFILE
 
-
 VALIDATE(){
     if [ $1 -ne 0 ]
     then
@@ -33,7 +32,7 @@ fi
 # echo "Total no:of Args Passed::$#"  # $# will show how many args passed
 # git mysql postfix net-tools, these are packages 
 # package=git for first time
-
+# passing args at the time of output
 for package in $@
 do
     yum list installed $package &>> $LOGFILE #check installed or not
