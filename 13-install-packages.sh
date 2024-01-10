@@ -9,7 +9,7 @@ N="\e[0m"   # normal colour
 TIMESTAMP=$(date +%F-%H-%M-%S)
 LOGFILE="/tmp/$0-$TIMESTAMP.log"
 
-echo "script stareted executing at $TIMESTAMP" &>> $LOGFILE
+echo "script started executing at $TIMESTAMP" &>> $LOGFILE
 
 VALIDATE(){
     if [ $1 -ne 0 ]
@@ -35,7 +35,7 @@ fi
 # passing args at the time of output
 for package in $@
 do
-    yum list installed $package &>> $LOGFILE #check installed or not
+    yum list installed $package &>> $LOGFILE #check installed or not   #$package is variable 1 and $LOGFILE is variable 2 
     if [ $? -ne 0 ]   #if not installed
     then
         yum install $package -y &>> $LOGFILE   # install the package
