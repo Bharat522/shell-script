@@ -1,6 +1,6 @@
 #!/bin/bash
 
-ID=$(id -u)
+ID=$(id -u)   # id -u is a command to check the user id (if it is root user then id will be '0')
 TIMESTAMP=$(date +%F-%H-%M-%S) # %F: year-month-date, %H: hour, %M: minute, %S: second 
 R="\e[31m"  # red colour
 G="\e[32m"  # green colour   
@@ -11,8 +11,10 @@ LOGFILE="/tmp/$0-$TIMESTAMP.log" # tmp folder,$0-script name.
 
 echo "Script started executing at $TIMESTAMP" &>> $LOGFILE
 
+echo "user id is $ID"
+
 VALIDATE(){  
-    if [ $1 -ne 0 ]   
+    if [ $1 -ne 0 ]   # -ne means not equal to
     then 
         echo -e "ERROR:: $2  $R Failed $N"       # echo is for printing purpose and for help command:   "man echo"
         exit 1
